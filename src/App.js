@@ -1,9 +1,9 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Box } from '@mui/material';
-import HomePage from './pages';
-import AboutPage from './pages/about';
-import NotFoundPage from './pages/not-found';
-import AppLayout from './_shared/layouts/app/AppLayout';
+import HomePage from 'pages';
+import AboutPage from 'pages/about';
+import NotFoundPage from 'pages/not-found';
+import AppLayout from '_shared/layouts/app/AppLayout';
 
 export default function App() {
   return (

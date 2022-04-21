@@ -1,7 +1,7 @@
 import { Outlet } from 'react-router-dom';
 import { Box, Container, Grid } from '@mui/material';
-import Navbar from '../../components/navbar/Navbar';
-import Footer from '../../components/footer/Footer';
+import Navbar from '_shared/components/navbar/Navbar';
+import Footer from '_shared/components/footer/Footer';
 
 export default function AppLayout() {
   return (
