@@ -24,7 +24,13 @@
     "lint": "eslint src",
     "lint:fix": "eslint src --fix",
     "prettier:check": "prettier --check .",
-    "prettier:fix": "prettier --write ."
+    "prettier:fix": "prettier --write .",
+    "prepare": "husky install"
+  },
+  "lint-staged": {
+    "*.{js,jsx}": "yarn lint:fix",
+    "*.{js,jsx,json,css,md}": "yarn prettier:fix",
+    "*.{js,css,md}": "prettier --write"
   },
   "browserslist": {
     "production": [
@@ -39,6 +45,8 @@
     ]
   },
   "devDependencies": {
+    "husky": "^7.0.4",
+    "lint-staged": "^12.4.0",
     "prettier": "^2.6.2"
   }
 }
