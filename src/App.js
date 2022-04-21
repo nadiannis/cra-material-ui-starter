@@ -6,8 +6,6 @@ import NotFoundPage from './pages/not-found';
 import AppLayout from './_shared/layouts/app/AppLayout';
 
 export default function App() {
-  const bla = '';
-
   return (
     <BrowserRouter>
       <Box
@@ -18,10 +16,10 @@ export default function App() {
         }}
       >
         <Routes>
-                  <Route path="*" element={<NotFoundPage />} />
-                  <Route path="/" element={<AppLayout />}>
-                    <Route index element={<HomePage />} />
-                    <Route path="/about" element={<AboutPage />} />
+          <Route path="*" element={<NotFoundPage />} />
+          <Route path="/" element={<AppLayout />}>
+            <Route index element={<HomePage />} />
+            <Route path="/about" element={<AboutPage />} />
           </Route>
         </Routes>
       </Box>
