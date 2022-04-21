@@ -1,6 +1,7 @@
 {
   "name": "cra-material-ui-starter",
   "description": "Create React App + Material UI starter project.",
+  "license": "MIT",
   "dependencies": {
     "@emotion/react": "^11.9.0",
     "@emotion/styled": "^11.8.1",
